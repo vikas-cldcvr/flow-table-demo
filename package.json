@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve ",
+    "start": "vue-cli-service serve  --port 8082",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@cldcvr/flow-core": "^1.21.0",
+    "@cldcvr/flow-system-icon": "^1.9.1",
+    "@cldcvr/flow-table": "^1.2.4",
+    "@faker-js/faker": "^8.0.2",
     "vue": "^3.2.13"
   },
   "devDependencies": {

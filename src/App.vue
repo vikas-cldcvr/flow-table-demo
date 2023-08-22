@@ -1,27 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <f-div state="default" height="100vh" width="100vw">
+    <MyTable></MyTable>
+    <TablePopover></TablePopover>
+  </f-div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import MyTable from "./components/MyTable.vue";
+import TablePopover from "./components/TablePopover.vue";
 
 export default defineComponent({
   name: "App",
+
   components: {
-    HelloWorld,
+    MyTable,
+    TablePopover,
   },
 });
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
