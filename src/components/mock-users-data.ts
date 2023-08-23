@@ -56,7 +56,7 @@ export default function getFakeUsers(
         mobile: {
           value: faker.phone.number(),
           template() {
-            return html`<f-text state="success">${this.value}</f-text>`;
+            return html`<f-input .value=${this.value}></f-input>`;
           },
         },
         sex: { value: faker.person.sex() },
@@ -77,7 +77,7 @@ export default function getFakeUsers(
     firstName: { value: "First name", sticky: true },
     lastName: { value: "Last name" },
     birthDate: { value: "Birth Date" },
-    mobile: { value: "Mobile" },
+    mobile: { value: "Mobile", width: "250px" },
     email: { value: "Email" },
     sex: { value: "Sex" },
     address: { value: "Address", width: "300px", selected: true },

@@ -16,6 +16,5 @@ export const store = reactive<AppStore>({
   },
   close() {
     this.openPoOver = false;
-    this.popoverTarget = undefined;
   },
 });
